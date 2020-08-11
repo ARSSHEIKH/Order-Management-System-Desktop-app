@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OMSDataSet3" targetNamespace="http://tempuri.org/OMSDataSet3.xsd" xmlns:mstns="http://tempuri.org/OMSDataSet3.xsd" xmlns="http://tempuri.org/OMSDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="OMSConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OMSConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OOP_Project1.Properties.Settings.GlobalReference.Default.OMSConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="prodIDTableAdapter" GeneratorDataComponentClassName="prodIDTableAdapter" Name="prodID" UserDataComponentName="prodIDTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OMSConnectionString1 (Settings)" DbObjectName="dbo.prodID" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT prod_id FROM dbo.prodID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="prod_id" DataSetColumn="prod_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OMSDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OMSDataSet3" msprop:Generator_UserDSName="OMSDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="prodID" msprop:Generator_TableClassName="prodIDDataTable" msprop:Generator_TableVarName="tableprodID" msprop:Generator_TablePropName="prodID" msprop:Generator_RowDeletingName="prodIDRowDeleting" msprop:Generator_RowChangingName="prodIDRowChanging" msprop:Generator_RowEvHandlerName="prodIDRowChangeEventHandler" msprop:Generator_RowDeletedName="prodIDRowDeleted" msprop:Generator_UserTableName="prodID" msprop:Generator_RowChangedName="prodIDRowChanged" msprop:Generator_RowEvArgName="prodIDRowChangeEvent" msprop:Generator_RowClassName="prodIDRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="prod_id" msprop:Generator_ColumnVarNameInTable="columnprod_id" msprop:Generator_ColumnPropNameInRow="prod_id" msprop:Generator_ColumnPropNameInTable="prod_idColumn" msprop:Generator_UserColumnName="prod_id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

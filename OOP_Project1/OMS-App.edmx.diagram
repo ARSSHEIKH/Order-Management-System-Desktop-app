@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="73e5fd3c284d46c5be586f29beb8e962" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="OMSModel.C_Order" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OMSModel.Admin" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OMSModel.ConfirmOrder" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OMSModel.Customer" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OMSModel.Employee" Width="1.5" PointX="8" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OMSModel.Product" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OMSModel.purchase1" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OMSModel.user" Width="1.5" PointX="5.75" PointY="5.625" IsExpanded="true" />
+        <AssociationConnector Association="OMSModel.FK___Order__ID__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="OMSModel.FK_purchase1_purchase1" ManuallyRouted="false" />
+        <AssociationConnector Association="OMSModel.FK_Employee_users" ManuallyRouted="false" />
+        <AssociationConnector Association="OMSModel.FK_purchase1_Product" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

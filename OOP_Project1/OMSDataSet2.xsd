@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OMSDataSet2" targetNamespace="http://tempuri.org/OMSDataSet2.xsd" xmlns:mstns="http://tempuri.org/OMSDataSet2.xsd" xmlns="http://tempuri.org/OMSDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="OMSConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OMSConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OOP_Project1.Properties.Settings.GlobalReference.Default.OMSConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AllOrdersViewTableAdapter" GeneratorDataComponentClassName="AllOrdersViewTableAdapter" Name="AllOrdersView" UserDataComponentName="AllOrdersViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OMSConnectionString1 (Settings)" DbObjectName="dbo.AllOrdersView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT OrderID, ID, cust_name, prod_Id, prod_name, OrderQuantity, TotalAmount, OrderDateTime, Over_All_Amount FROM dbo.AllOrdersView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="cust_name" DataSetColumn="cust_name" />
+              <Mapping SourceColumn="prod_Id" DataSetColumn="prod_Id" />
+              <Mapping SourceColumn="prod_name" DataSetColumn="prod_name" />
+              <Mapping SourceColumn="OrderQuantity" DataSetColumn="OrderQuantity" />
+              <Mapping SourceColumn="TotalAmount" DataSetColumn="TotalAmount" />
+              <Mapping SourceColumn="OrderDateTime" DataSetColumn="OrderDateTime" />
+              <Mapping SourceColumn="Over_All_Amount" DataSetColumn="Over_All_Amount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OMSDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OMSDataSet2" msprop:Generator_UserDSName="OMSDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AllOrdersView" msprop:Generator_TableClassName="AllOrdersViewDataTable" msprop:Generator_TableVarName="tableAllOrdersView" msprop:Generator_TablePropName="AllOrdersView" msprop:Generator_RowDeletingName="AllOrdersViewRowDeleting" msprop:Generator_RowChangingName="AllOrdersViewRowChanging" msprop:Generator_RowEvHandlerName="AllOrdersViewRowChangeEventHandler" msprop:Generator_RowDeletedName="AllOrdersViewRowDeleted" msprop:Generator_UserTableName="AllOrdersView" msprop:Generator_RowChangedName="AllOrdersViewRowChanged" msprop:Generator_RowEvArgName="AllOrdersViewRowChangeEvent" msprop:Generator_RowClassName="AllOrdersViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="cust_name" msprop:Generator_ColumnVarNameInTable="columncust_name" msprop:Generator_ColumnPropNameInRow="cust_name" msprop:Generator_ColumnPropNameInTable="cust_nameColumn" msprop:Generator_UserColumnName="cust_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prod_Id" msprop:Generator_ColumnVarNameInTable="columnprod_Id" msprop:Generator_ColumnPropNameInRow="prod_Id" msprop:Generator_ColumnPropNameInTable="prod_IdColumn" msprop:Generator_UserColumnName="prod_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="prod_name" msprop:Generator_ColumnVarNameInTable="columnprod_name" msprop:Generator_ColumnPropNameInRow="prod_name" msprop:Generator_ColumnPropNameInTable="prod_nameColumn" msprop:Generator_UserColumnName="prod_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderQuantity" msprop:Generator_ColumnVarNameInTable="columnOrderQuantity" msprop:Generator_ColumnPropNameInRow="OrderQuantity" msprop:Generator_ColumnPropNameInTable="OrderQuantityColumn" msprop:Generator_UserColumnName="OrderQuantity" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalAmount" msprop:Generator_ColumnVarNameInTable="columnTotalAmount" msprop:Generator_ColumnPropNameInRow="TotalAmount" msprop:Generator_ColumnPropNameInTable="TotalAmountColumn" msprop:Generator_UserColumnName="TotalAmount" type="xs:double" minOccurs="0" />
+              <xs:element name="OrderDateTime" msprop:Generator_ColumnVarNameInTable="columnOrderDateTime" msprop:Generator_ColumnPropNameInRow="OrderDateTime" msprop:Generator_ColumnPropNameInTable="OrderDateTimeColumn" msprop:Generator_UserColumnName="OrderDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Over_All_Amount" msprop:Generator_ColumnVarNameInTable="columnOver_All_Amount" msprop:Generator_ColumnPropNameInRow="Over_All_Amount" msprop:Generator_ColumnPropNameInTable="Over_All_AmountColumn" msprop:Generator_UserColumnName="Over_All_Amount" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AllOrdersView" />
+      <xs:field xpath="mstns:OrderID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
