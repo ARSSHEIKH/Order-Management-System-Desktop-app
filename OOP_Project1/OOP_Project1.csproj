@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFDBCCDF-C4DF-4342-9808-75C75272BD67}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OOP_Project1</RootNamespace>
+    <AssemblyName>OOP_Project1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Sync\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\Sync\AppData\Local\Temp\vsA6C7.tmp\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\Sync\AppData\Local\Temp\vsA6C7.tmp\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C938B6B5D6CE2FF07431DCB0DEEDE6E8B8DE5F8A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>OOP_Project1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <DependentUpon>OMS-App.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmOrder.cs">
+      <DependentUpon>OMS-App.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Connection1.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="Customer.cs">
+      <DependentUpon>OMS-App.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInfo.Designer.cs">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Order.cs">
+      <DependentUpon>OMS-App.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>OMS-App.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OMS-App.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMS-App.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OMS-App.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMS-App.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OMS-App.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMS-App.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OMSDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OMSDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersReport.Designer.cs">
+      <DependentUpon>OrdersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ORM.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORM.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>OMS-App.tt</DependentUpon>
+    </Compile>
+    <Compile Include="purchase1.cs">
+      <DependentUpon>OMS-App.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="user.cs">
+      <DependentUpon>OMS-App.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserWindow.Designer.cs">
+      <DependentUpon>UserWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewOrder.Designer.cs">
+      <DependentUpon>NewOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductInfo.Designer.cs">
+      <DependentUpon>ProductInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpgradeCustomer.Designer.cs">
+      <DependentUpon>UpgradeCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpgradeProduct.Designer.cs">
+      <DependentUpon>UpgradeProduct.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInfo.resx">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="OMS-App.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>OMS-App.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="OMS-App.edmx.diagram">
+      <DependentUpon>OMS-App.edmx</DependentUpon>
+    </None>
+    <None Include="OMSDataSet.xsc">
+      <DependentUpon>OMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet.xss">
+      <DependentUpon>OMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet1.xsc">
+      <DependentUpon>OMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet1.xss">
+      <DependentUpon>OMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet10.xsc">
+      <DependentUpon>OMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet10.xss">
+      <DependentUpon>OMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet11.xsc">
+      <DependentUpon>OMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet11.xss">
+      <DependentUpon>OMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet12.xsc">
+      <DependentUpon>OMSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet12.xss">
+      <DependentUpon>OMSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet2.xsc">
+      <DependentUpon>OMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet2.xss">
+      <DependentUpon>OMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet3.xsc">
+      <DependentUpon>OMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet3.xss">
+      <DependentUpon>OMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet4.xsc">
+      <DependentUpon>OMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet4.xss">
+      <DependentUpon>OMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet5.xsc">
+      <DependentUpon>OMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet5.xss">
+      <DependentUpon>OMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet6.xsc">
+      <DependentUpon>OMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet6.xss">
+      <DependentUpon>OMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet7.xsc">
+      <DependentUpon>OMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet7.xss">
+      <DependentUpon>OMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet8.xsc">
+      <DependentUpon>OMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet8.xss">
+      <DependentUpon>OMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet9.xsc">
+      <DependentUpon>OMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="OMSDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OMSDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OMSDataSet9.xss">
+      <DependentUpon>OMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="OOP_Project1_TemporaryKey.pfx" />
+    <None Include="ORM.dbml.layout">
+      <DependentUpon>ORM.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="OrdersReport.resx">
+      <DependentUpon>OrdersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="UserWindow.resx">
+      <DependentUpon>UserWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewOrder.resx">
+      <DependentUpon>NewOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductInfo.resx">
+      <DependentUpon>ProductInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpgradeCustomer.resx">
+      <DependentUpon>UpgradeCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpgradeProduct.resx">
+      <DependentUpon>UpgradeProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ORM.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>ORM.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dropdownArrow31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <None Include="Dockerfile">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Dockerfile1.cs</LastGenOutput>
+    </None>
+    <Content Include="OMS-App.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OMS-App.edmx</DependentUpon>
+      <LastGenOutput>OMS-App.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="OMS-App.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>OMS-App.edmx</DependentUpon>
+      <LastGenOutput>OMS-App.cs</LastGenOutput>
+    </Content>
+    <Content Include="OMS.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="OMS_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>OMS.mdf</DependentUpon>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
